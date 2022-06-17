@@ -1,7 +1,11 @@
 /* USER VARIABLES SECTION */
 
 :root {
+	--userfont: Montserrat, sans-serif;
 
+	--white: #fff;
+	--gray20: #333333;
+	--orangepeel: #FF9900;
 }
 
 /* BOOTSTRAP SETTINGS SECTION */
@@ -60,9 +64,30 @@
 /* GENERAL CSS SETTINGS */
 
 body {
+	font-family: var(--userfont);
 	min-width: 320px;
 	position: relative;
 	overflow-x: hidden;
 }
 
 /* USER STYLES */
+
+.container {
+	max-width: 1800px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.site-heading {
+	font-weight: 400;
+	font-size: 48px;
+	color: var(--gray20);
+}
+
+.site-btn {
+	font-weight: 700;
+	background: var(--orangepeel);
+	color: var(--white);
+}
+
+/* Header */
