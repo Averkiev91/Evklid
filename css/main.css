@@ -89,6 +89,19 @@ button {
 	padding: 0 75px;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 .list-reset {
 	list-style: none;
 }
@@ -152,4 +165,65 @@ button {
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 22px;
+}
+
+/* Header */
+
+.hero {
+	height: 620px;
+}
+
+.hero__container {
+	height: 100%;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.hero__slide {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.hero-content {
+	position: absolute;
+	max-width: 940px;
+	padding: 100px 0 100px 80px;
+	z-index: 999;
+}
+
+.hero-content__heading {
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 85px;
+
+	margin-bottom: 24px;
+
+	color: var(--white);
+}
+
+.hero-content__text {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+
+	margin-bottom: 92px;
+
+	color: var(--white);
+}
+
+.hero-content__btn {
+	min-width: 280px;
+	padding: 25px 37px;
+
+	font-weight: 700;
+	font-size: 23.4581px;
+	line-height: 29px;
+
+	text-align: center;
+
+	color: var(--white);
 }
