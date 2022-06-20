@@ -6,6 +6,7 @@
 	--white: #fff;
 	--gray20: #333333;
 	--orangepeel: #FF9900;
+	--grid-gap: 32px;
 }
 
 /* BOOTSTRAP SETTINGS SECTION */
@@ -87,6 +88,12 @@ button {
 	max-width: 1920px;
 	margin: 0 auto;
 	padding: 0 75px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: var(--grid-gap);
 }
 
 .visually-hidden {
@@ -226,4 +233,77 @@ button {
 	text-align: center;
 
 	color: var(--white);
+}
+
+/* About */
+
+.about {
+	padding-top: 100px;
+}
+
+.about__text {
+	max-width: 1235px;
+	margin: 0;
+	padding-top: 24px;
+
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+
+	color: var(--gray20);
+}
+
+.about__heading {
+	margin: 0;
+}
+
+.about-content {
+	margin: 0;
+	padding: 0;
+	padding-top: 50px;
+	grid-template-rows: repeat(2, 295px);
+}
+
+.about-content__item:first-child {
+	display: flex;
+	align-items: flex-end;
+	background-image: url(../images/about-1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	grid-column: 6 span;
+	grid-row: 2 span;
+}
+
+.about-content__item {
+	grid-column: 6 span;
+}
+
+.about-item__first {
+	display: flex;
+	width: 100%;
+	padding: 50px;
+	align-items: center;
+	justify-content: space-between;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.about-first__desc {
+	margin: 0;
+	max-width: 430px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 32px;
+
+	color: var(--white);
+}
+
+.about-first__btn {
+	padding: 19px 38px;
+	background-color: transparent;
+	border: 3px solid var(--orangepeel);
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
 }
