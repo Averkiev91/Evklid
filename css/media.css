@@ -1,8 +1,55 @@
 /* === DESKTOP FIRST === */
 
-/* xl <= Extra extra large (xxl) */
-@media (max-width : 1400px) {
+@media (max-width : 1680px) {
 
+	/* About */
+	.about-content__item:not(:first-child) {
+		padding: 40px 25px 30px 80px;
+		align-items: center;
+	}
+
+	/* Work */
+	.work__wrapper {
+		column-gap: 100px;
+	}
+}
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1440px) {
+
+	/* About */
+	.about {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.about-content__item:not(:first-child) {
+		padding: 20px 20px 20px 80px;
+		align-items: center;
+	}
+	.about-content__item-title {
+		font-size: 20px;
+	}
+
+	/* Work */
+
+	.work-img {
+		flex: 1 1 40%;
+	}
+	.work-img img {
+		max-width: 570px;
+	}
+
+	/* Footer */
+
+	.footer__text {
+		max-width: 280px;
+		font-size: 14px;
+	}
+
+	.footer__nav {
+		flex-basis: 25%;
+	}
 }
 
 /* lg <= Extra large (xl) */
@@ -50,14 +97,8 @@
 
 /* Extra large (xl) */
 @media (min-width : 1200px) {
-	.text {
-		font-size: 18px;
-	}
 }
 
 /* Extra extra large (xxl) */
 @media (min-width : 1400px) {
-	.text {
-		font-size: 22px;
-	}
 }

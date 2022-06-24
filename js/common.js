@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			el: ".swiper-pagination",
 		},
 		mousewheel: {
-    	invert: true,
+			releaseOnEdges: true
 		},
 	})
 
