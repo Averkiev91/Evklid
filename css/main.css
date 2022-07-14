@@ -123,6 +123,10 @@ button {
 	display: block;
 }
 
+.logo img {
+	width: 100%;
+}
+
 .site-heading {
 	font-weight: 400;
 	font-size: 48px;
@@ -201,9 +205,11 @@ button {
 }
 
 .hero__slide {
+	width: 100%;
+	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
+	background-position: 50% 50%;
 }
 
 .hero-content {
@@ -703,4 +709,38 @@ button {
 
 .burger {
 	display: none;
+	position: relative;
+}
+
+.burger__icon {
+	display: block;
+	position: relative;
+	background-color: var(--black);
+	border-radius: 3px;
+	width: 30px;
+	height: 3px;
+}
+
+.burger__icon::before {
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: var(--black);
+	width: 30px;
+	height: 3px;
+	border-radius: 3px;
+	left: 0;
+	top: 10px;
+}
+
+.burger__icon::after {
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: var(--black);
+	width: 30px;
+	height: 3px;
+	border-radius: 3px;
+	left: 0;
+	top: -10px;
 }

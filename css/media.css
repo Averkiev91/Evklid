@@ -54,7 +54,42 @@
 
 /* lg <= Extra large (xl) */
 @media (max-width : 1200px) {
+	/* Header */
+	.burger {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
+	.nav {
+		display: none;
+	}
+
+	.header__logo {
+		width: 190px;
+	}
+
+	/* Hero*/
+
+	.hero {
+		height: 668px;
+	}
+
+	.hero__container {
+		padding-top: 40px;
+	}
+
+	.hero-content__heading {
+		font-size: 60px;
+	}
+
+	.hero-content__text {
+		font-size: 20px;
+	}
+
+	.swiper {
+		border-radius: 32px;
+	}
 }
 
 /* md <= Large (lg) */
