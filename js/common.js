@@ -46,4 +46,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		});             
 	});
+
+	/* Burger */
+
+	const burgerButton = document.querySelector('.burger')
+	const overlay = document.querySelector('.overlay')
+	const navMenu = document.querySelector('.nav')
+
+	burgerButton.addEventListener('click', () => {
+		burgerButton.classList.toggle('burger--active')
+		navMenu.classList.toggle('nav--active')
+		overlay.classList.toggle('overlay--active')
+		document.body.classList.toggle('no-scroll')
+	})
 })

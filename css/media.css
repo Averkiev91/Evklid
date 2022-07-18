@@ -61,12 +61,26 @@
 		justify-content: center;
 	}
 
-	.nav {
-		display: none;
+	.nav__list {
+		display: block;
+		padding-top: 170px;
+		padding-left: 50px;
+	}
+
+	.nav__item:not(:last-child) {
+		margin-bottom: 60px;
+	}
+
+	.nav__link {
+		font-size: 22px;
 	}
 
 	.header__logo {
 		width: 190px;
+	}
+
+	.burger {
+		display: block;
 	}
 
 	/* Hero*/
