@@ -148,6 +148,7 @@ button {
 
 .logo {
 	display: block;
+	max-width: 224px
 }
 
 .logo img {

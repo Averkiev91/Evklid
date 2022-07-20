@@ -106,6 +106,35 @@
 	}
 }
 
+/* About */
+
+.grid {
+	grid-template-rows: 640px 295px 295px;
+}
+
+.about-content__item:not(:first-child) {
+	padding: 65px 155px 65px 148px;
+}
+
+.about-content__item:first-child {
+	grid-column: 12 span;
+	grid-row: 1 span;
+}
+
+.about-content__item {
+	grid-column: 12 span;
+}
+
+/* Footer */
+
+.footer__content {
+	justify-content: flex-end;
+}
+
+.footer__text {
+	display: none;
+}
+
 /* md <= Large (lg) */
 @media (max-width : 992px) {
 

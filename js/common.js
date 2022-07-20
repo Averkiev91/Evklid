@@ -6,9 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
 		pagination: {
 			el: ".swiper-pagination",
 		},
-		mousewheel: {
-			releaseOnEdges: true
-		},
+		autoplay: {
+			delay: 3000,
+			pauseOnMouseEnter: true,
+			disableOnInteraction: false
+		}
 	})
 
 	/* work-tabs */
@@ -53,10 +55,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	const overlay = document.querySelector('.overlay')
 	const navMenu = document.querySelector('.nav')
 
-	burgerButton.addEventListener('click', () => {
+	function toggleBurger() {
 		burgerButton.classList.toggle('burger--active')
 		navMenu.classList.toggle('nav--active')
 		overlay.classList.toggle('overlay--active')
 		document.body.classList.toggle('no-scroll')
+	}
+
+	burgerButton.addEventListener('click', () => {
+		toggleBurger()
 	})
 })
