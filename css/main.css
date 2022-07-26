@@ -287,7 +287,6 @@ button {
 
 .about {
 	padding-top: 100px;
-	padding-bottom: 100px;
 }
 
 .about__text {
@@ -401,7 +400,7 @@ button {
 /* Work */
 
 .work {
-	padding-bottom: 100px;
+	padding-top: 100px;
 }
 
 .work__heading {
@@ -505,7 +504,7 @@ button {
 /* Question */
 
 .questions {
-	padding-bottom: 100px;
+	padding-top: 100px;
 }
 
 .questions__heading {
@@ -549,7 +548,7 @@ button {
 .accordion-icon {
 	position: absolute;
 	top: 30px;
-	right: -10px;
+	right: -15px;
 	display: block;
 	width: 50px;
 	height: 50px;
@@ -567,6 +566,9 @@ button {
 /* Footer */
 
 .footer {
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	background-color: var(--black22);
 }
 

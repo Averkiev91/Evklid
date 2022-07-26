@@ -18,10 +18,6 @@
 @media (max-width : 1440px) {
 
 	/* About */
-	.about {
-		padding-top: 50px;
-		padding-bottom: 50px;
-	}
 
 	.about-content__item:not(:first-child) {
 		padding: 20px 20px 20px 80px;
@@ -194,6 +190,89 @@
 
 /* sm <= Medium (md) */
 @media (max-width : 768px) {
+
+.container {
+	padding: 0 50px;
+}
+
+.hero {
+	padding-top: 40px;
+}
+
+.hero-content__btn {
+	padding: 20px 38px;
+	border-radius: 16px;
+}
+
+.hero-content {
+	padding: 160px 40px;
+}
+
+.hero-content__text {
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 60px;
+}
+
+.hero-content__heading {
+	font-size: 50px;
+	line-height: 61px;
+}
+
+.about {
+	padding-top: 40px;
+}
+
+.about__text {
+	font-size: 16px;
+}
+
+.about-content__item-background {
+	padding: 34px 40px;
+}
+
+.about-content__item:not(:first-child) {
+	padding: 0 0 0 90px;
+}
+
+	/* Work */
+
+.work {
+	padding-top: 80px;
+}
+
+.work-img img {
+	max-width: 668px;
+}
+
+.questions {
+	padding-top: 50px;
+}
+
+.accordion__title {
+	font-size: 20px;
+}
+
+.footer__container {
+	flex-direction: column-reverse;
+	justify-content: center;
+}
+
+.footer__content {
+	justify-content: flex-start;
+}
+
+.footer__social {
+	padding-top: 16px;
+}
+
+.footer__nav {
+	padding-top: 50px;
+}
+
+.footer__list {
+	display: none;
+}
 
 }
 
