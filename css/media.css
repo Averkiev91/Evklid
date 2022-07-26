@@ -144,6 +144,11 @@
 	}
 
 	/* Work */
+
+	.work__wrapper {
+		column-gap: 55px;
+	}
+
 	.work-img img {
 		max-width: 437px;
 	}
@@ -169,6 +174,21 @@
 
 	/* Work */
 
+.work__list {
+	justify-content: space-between;
+}
+
+.work__wrapper {
+	flex-direction: column-reverse;
+}
+
+.work-content {
+	padding-top: 32px;
+}
+
+.work-img img {
+	max-width: 842px;
+}
 
 }
 
