@@ -27,30 +27,33 @@
 		font-size: 20px;
 	}
 
-	/* Work */
-
-	.work-img {
-		flex: 1 1 40%;
-	}
-	.work-img img {
-		max-width: 570px;
-	}
-
 	/* Footer */
 
+	.footer__content {
+		padding-left: 55px;
+	}
 
-	.footer__text {
+	.footer__description-text {
 		font-size: 14px;
+		line-height: 24px;
 	}
 
 	.form-field__btn {
 		padding: 15px 30px;
 	}
 
+	.footer__form {
+	min-width: 525px;
+}
+
 }
 
 /* lg <= Extra large (xl) */
 @media (max-width : 1200px) {
+
+	.container {
+		padding: 0 50px;
+	}
 	/* Header */
 	.burger {
 		display: flex;
@@ -101,31 +104,17 @@
 
 	/* Hero*/
 
-	.hero {
-		height: 668px;
-	}
 
-	.hero__container {
-		padding-top: 40px;
-	}
-
-	.hero-content__heading {
-		font-size: 60px;
-	}
-
-	.hero-content__text {
-		font-size: 20px;
-	}
-
-	.swiper {
-		border-radius: 32px;
-	}
 
 	/* About */
 
-	.about-content__item:not(:first-child) {
-		padding: 65px 155px 65px 148px;
+	.about-content__item:first-child {
+		grid-column: 12 span;
 	}
+
+	.about-content__item {
+		grid-column: 12 span;
+}
 
 	/* Work */
 
@@ -133,9 +122,6 @@
 		column-gap: 55px;
 	}
 
-	.work-img img {
-		max-width: 437px;
-	}
 	/* Footer */
 
 	.footer__content {
@@ -158,21 +144,17 @@
 
 	/* Work */
 
-.work__list {
-	justify-content: space-between;
-}
+	.work__list {
+		justify-content: space-between;
+	}
 
-.work__wrapper {
-	flex-direction: column-reverse;
-}
+	.work__wrapper {
+		flex-direction: column-reverse;
+	}
 
-.work-content {
-	padding-top: 32px;
-}
-
-.work-img img {
-	max-width: 842px;
-}
+	.work-content {
+		padding-top: 32px;
+	}
 
 }
 
@@ -183,29 +165,6 @@
 	padding: 0 50px;
 }
 
-.hero {
-	padding-top: 40px;
-}
-
-.hero-content__btn {
-	padding: 20px 38px;
-	border-radius: 16px;
-}
-
-.hero-content {
-	padding: 160px 40px;
-}
-
-.hero-content__text {
-	font-size: 18px;
-	line-height: 22px;
-	margin-bottom: 60px;
-}
-
-.hero-content__heading {
-	font-size: 50px;
-	line-height: 61px;
-}
 
 .about {
 	padding-top: 40px;
@@ -353,34 +312,4 @@
 	padding-top: 14px;
 }
 
-}
-
-
-/* === MOBILE FIRST === */
-
-/* Custom (xs) */
-@media (min-width : 0) {
-
-}
-
-/* Small (sm) */
-@media (min-width : 576px) {
-
-}
-
-/* Medium (md) */
-@media (min-width : 768px) {
-
-}
-
-/* Large (lg) */
-@media (min-width : 992px) {
-}
-
-/* Extra large (xl) */
-@media (min-width : 1200px) {
-}
-
-/* Extra extra large (xxl) */
-@media (min-width : 1400px) {
 }

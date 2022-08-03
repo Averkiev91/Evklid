@@ -5,10 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	const swiper = new Swiper(".mySwiper", {
 		pagination: {
 			el: ".swiper-pagination",
+			type: 'bullets',
+			clickable: true
 		},
 		autoplay: {
-			delay: 3000,
-			pauseOnMouseEnter: true,
+			delay: 6000,
 			disableOnInteraction: false
 		}
 	})
