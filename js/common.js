@@ -66,4 +66,18 @@ document.addEventListener("DOMContentLoaded", () => {
 	burgerButton.addEventListener('click', () => {
 		toggleBurger()
 	})
+
+	/* Search */
+
+	const search = document.querySelector('.search')
+	const searchNav = document.querySelector('.search-navigation')
+	const buttonClosed = document.querySelector('.navigation-button__closed')
+
+	search.addEventListener('click', () => {
+		searchNav.classList.add('search-navigation--active')
+	})
+
+	buttonClosed.addEventListener('click', () => {
+		searchNav.classList.remove('search-navigation--active')
+	})
 })

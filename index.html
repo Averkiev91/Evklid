@@ -39,7 +39,7 @@
 			<a href="#" class="logo header__logo">
 				<img src="images/Logo.svg" alt="Evklid logo">
 			</a>
-			<nav class="nav">
+			<nav class="nav nav-header">
 				<ul class="list-reset nav__list">
 					<li class="nav__item">
 						<a href="#" class="nav__link">О нас</a>
@@ -58,17 +58,17 @@
 					</li>
 				</ul>
 			</nav>
-			<button class="search header__search">
-				<span>
-					<svg fill="none" xmlns="http://www.w3.org/2000/svg">
-						<rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)"
-							fill="#333333" />
-						<path
-							d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
-							stroke="#333333" stroke-width="2" />
-					</svg>
-				</span>
+			<button class="search">
 			</button>
+			<div class="search-navigation">
+					<form action="#" class="search-navigation__form" method="POST">
+					<input type="text" class="search-navigation__input" placeholder="Что будем искать?">
+					<button class="search-navigation__button">
+							<span class="navigation-button__search"></span>
+					</button>
+					<span class="navigation-button__closed"></span>
+			</form>
+			</div>
 		</div>
 	</header>
 
